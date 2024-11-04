@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+        /* 整体页面样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* 菜单容器样式 */
+       .menu {
+            background-color: #333;
+            width: 200px;
+            color: white;
+            padding-top: 20px;
+        }
+
+        /* 菜单列表样式 */
+       .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 菜单列表项样式 */
+       .menu ul li {
+            padding: 10px 0;
+            text-align: center;
+            cursor: pointer;
+        }
+
+       .menu ul li:hover {
+            background-color: #444;
+        }
+
+       .menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 内容区域容器样式 */
+       .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #333;
+        }
+
+        /* 段落样式 */
+        p {
+            color: #666;
+        }
+
+        /* 登出按钮样式 */
+        #logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 菜单部分 -->
+    <div class="menu">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#tool1">工具一</a></li>
+            <li><a href="#tool2">关于我们</a></li>
+            <li><a href="#tool3">联系我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="content">
+        <h1>欢迎来到我们的网站</h1>
+        <p>这里是您获取各类信息和享受优质服务的地方，希望您能有一个愉快的体验！</p>
+    </div>
+
+    <!-- 登出按钮 -->
+    <button id="logout-btn">
+        <a href="logout" style="color: white; text-decoration: none;">登出</a>
+    </button>
+</body>
+
+</html>
